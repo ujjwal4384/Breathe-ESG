@@ -1,0 +1,119 @@
+.loginParentContainer {
+  display: flex;
+  background-color: #aee3d0;
+  height: 100vh;
+}
+.logoImg {
+  height: 8vw;
+  width: 60%;
+  margin: 2vh;
+}
+.imagesDiv {
+  display: flex;
+  background-color: #aee3d0;
+  height: 15vh;
+  width: auto;
+  margin: 2vh;
+}
+.heroImage {
+  height: 37vw;
+  width: 40%;
+  margin-left: 6vw;
+  margin-top: 10vh;
+  z-index: 10;
+  position: fixed;
+}
+
+.loginContainer {
+  height: 100vh;
+  width: 50%;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  background-color: white;
+  margin-left: 40%;
+  position: fixed;
+  padding-top: 7%;
+  padding-bottom: 6%;
+  padding-right: 12%;
+  padding-left: 12%;
+}
+
+.thirdPartyContainer {
+  display: flex;
+  gap: 1em;
+}
+
+.loginFormContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+  width: 35%;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.googleIcon {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin: 5px;
+}
+@media (max-width: 1000px) {
+  .imagesDiv {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .heroImage {
+    margin-left: 0;
+  }
+}
+
+.inputBox {
+  background: 0;
+  border: 0;
+  outline: none;
+  width: 75%;
+  max-width: 400px;
+  font-size: 1em;
+  transition: padding 0.3s 0.2s ease;
+}
+.inputBox:focus {
+  padding-bottom: 5px;
+}
+.inputBox:focus + .inputLine:after {
+  transform: scaleX(1);
+}
+.inputField {
+  position: relative;
+  margin-top: 2em;
+}
+.inputField .inputLine {
+  width: 75%;
+  height: 3px;
+  position: absolute;
+  bottom: -8px;
+  background: #bdc3c7;
+}
+.inputField .inputLine:after {
+  content: " ";
+  position: absolute;
+  float: right;
+  width: 100%;
+  height: 3px;
+  transform: scalex(0);
+  transition: transform 0.3s ease;
+  background: #1abc9c;
+}
+
+.loginButton {
+  width: 75%;
+  color: black;
+  font-weight: 750;
+  background-color: #aee3d0;
+  border: none;
+  border-radius: 10.9593px;
+  padding: 0.75em;
+}
